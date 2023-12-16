@@ -1,0 +1,45 @@
+body{
+    overflow: hidden;
+}
+.parent{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.load{
+    width: 30px;
+    height: 30px;
+    background-color: darkcyan;
+    margin: 4px;
+    border-radius: 10px;
+    animation: load 0.9s ease infinite;
+}
+.load.load-1{
+    animation-delay: 0.3s;
+}
+.load.load-2{
+    animation-delay: 0.5s;
+
+}
+.load.load-3{
+    animation-delay: 0.7s;
+
+}
+.load.load-4{
+    animation-delay: 0.9s;
+
+}
+@keyframes load{
+    0%{
+        margin:0px 5px 50px;
+        background-color: red;
+    }
+    50%{
+        margin: 0px 5px 25px;
+    }
+    100%{
+        margin:0px 5px 0px;
+    }
+}
